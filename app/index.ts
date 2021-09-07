@@ -17,6 +17,10 @@ bot.help((ctx) => ctx.reply(helpMessage, { parse_mode: "Markdown" }));
 bot.hears(/\d+\$/, (ctx) => {
   const grossNum = parseFloat(ctx.message.text.replace("gross", ""));
 
+  if (isNaN(grossNum)) {
+    return ctx.reply(`Что-то пошло не так, попробуйте еще`);
+  }
+
   ctx.reply(`Во что перевести ${grossNum}$?`, {
     reply_markup: {
       inline_keyboard: [
