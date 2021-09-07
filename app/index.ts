@@ -8,7 +8,7 @@ enum ActionsEnum {
   GROSS_TO_NET_BTN = "GROSS_TO_NET_BTN",
 }
 
-const helpMessage = `Чтобы перевести что-то в *NET* или *GROSS*, нужно послать боту сумму в формате *dddd$*, где *dddd* - число без пробелов, а *$* - знак доллара`;
+const helpMessage = `Чтобы перевести что-то в NET или GROSS, пришлите боту сумму в формате dddd$, где dddd - число без пробелов, а $ - знак доллара`;
 
 const bot = new Telegraf(process.env.BOT_TOKEN ?? "");
 
