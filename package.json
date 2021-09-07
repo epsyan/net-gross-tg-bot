@@ -4,9 +4,10 @@
   "description": "Calculate net/gross through the Telegram",
   "main": "index.js",
   "scripts": {
+    "start": "node dist/index.js",
+    "compile": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "devDependencies": {
     "@types/node": "^14.14.41",
     "nodemon": "^2.0.12",
