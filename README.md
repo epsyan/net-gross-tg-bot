@@ -1,2 +1,2 @@
 # net-gross-tg-bot
-Calculate net/gross through the Telegram
+Calculate net/gross through Telegram
